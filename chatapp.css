@@ -4,6 +4,7 @@ body
     background-size: cover;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
+    
 }
 
 .glyphicon {
@@ -47,4 +48,21 @@ body
     padding-right: 15px;
     color: white;
     font-size: 18px;
+}
+
+#room_div
+{
+    background-color: #f7eecf;
+    box-shadow: 5px 5px 20px #838383 ;
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#logout_button
+{
+    float: right;
+    margin: 30px;
+    font-size: 20px;
 }
