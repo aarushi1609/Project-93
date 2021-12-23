@@ -3,6 +3,9 @@
 
 <head>
     <title>Let's Chat!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Oxygen&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="chatapp.css">
-    <script src="chatapp.js"></script>
+
 </head>
 
 <body>
@@ -28,8 +31,7 @@
         <div id="room_div">
             <h3 id="letschat">Let's Chat!</h3>
             <hr style="height:2px;border-width:0;width:400px;color:#316B83;background-color:#316B83">
-            <label>Welcome!</label>
-            <label id="username_welcome"></label>
+            <label id="welcome">Welcome!</label>
             <br>
             <label>Add Room</label>
             <input class="form-control" placeholder="Enter a room name here." id="add_room_input">
@@ -43,4 +45,5 @@
         </div>
 
     </center>
+    <script src="chatapp_room.js"></script>
 </body>
