@@ -25,27 +25,23 @@
 </head>
 
 <body>
-    <button id="logout_button" class="btn btn-danger" onclick="logout();">Logout</button>
+    <button id="logout_button" onclick="logout();" class="btn btn-danger">Logout</button>
+    <br>
+    <br>
     <center>
-        <br>
-        <div id="room_div">
-            <h3 id="letschat">Let's Chat!</h3>
-            <hr style="height:2px;border-width:0;width:400px;color:#316B83;background-color:#316B83">
-            <label id="welcome">Welcome!</label>
-            <br>
-            <label>Add Room</label>
-            <input class="form-control" placeholder="Enter a room name here." id="add_room_input">
-            <br>
-            <button id="addRoom" onclick="addRoom();" class="btn btn-primary">Add Room</button>
-        </div>
-
-        <div id="room_div">
-            <h3>Trending Rooms</h3>
+        <div id="send_div">
+            <h4 id="letschat">Let's Chat!</h4>
             <hr style="height:2px;border-width:0;width:400px;color:#316B83;background-color:#316B83">
             <div id="output"></div>
         </div>
 
-
+        <div id="send_div">
+            <input id="message_input" class="form-control" placeholder="Write your message here.">
+            <br>
+            <button class="btn btn-success" id="send_button" onclick="send();">Send</button>
+        </div>
     </center>
-    <script src="chatapp_room.js"></script>
+    <script src="chatapp_page.js"></script>
 </body>
+
+</html>

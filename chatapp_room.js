@@ -40,8 +40,16 @@ function getData() {
 }
 getData();
 
-function changePage() {
+function changePage(name) {
   console.log("done");
-  localStorage.setItem("roomname", room_name);
-  window.location = "kwitter_page.html";
+  localStorage.setItem("roomname", name);
+  window.location = "chatapp_page.html";
 }
+
+function logout()
+{
+      localStorage.removeItem("Roomname");
+      localStorage.removeItem("Username");
+      window.location = "index.html";
+}
+
